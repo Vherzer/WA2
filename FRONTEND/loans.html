@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PontyBridge Library System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!--JQ   stuff-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        PB Library
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+                <li>
+                    <a href="books.html">Books</a>
+                </li>
+                <li>
+                    <a href="loans.html">Loans</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <h1>PontyBridge Library System</h1>
+                <br>
+                <h2>Loan Overview</h2>
+                <h3>Loan a book</h3>
+                <div>
+                  <label>Book Title:</label>
+                  <input id="booktoloan" type="text">
+                </div>
+                <div>
+                  <label>User Barcode:</label>
+                  <input id="loanuser" type="text">
+                </div>
+                <p>Due Date: </p>
+                <div>
+                  <button id="loanbookbutton">Loan Book</button>
+                </div>
+                <div class="bookloaned">
+
+                </div>
+                <h3>Current loans</h3>
+                <div>
+                  <label>User Barcode:</label>
+                  <input id="userloan" type="text">
+                </div>
+                <p>or</p>
+                <div>
+                  <label>Book Title:</label>
+                  <input id="loanedbook" type="text">
+                </div>
+                <div>
+                  <button id="findloans">Search</button>
+                </div>
+                <div class="currentloans">
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Open Menu</a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- MY OWN JAVA -->
+    <script src="javascript.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
